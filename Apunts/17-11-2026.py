@@ -66,3 +66,27 @@ print(primeracadena+segonacadena)
 # Si hi ha cadena amb valor "3" i altre "4" i les sumam el resultat és "34" perquè és text
 print(primeracadena*3) # imprimirà Hola, Hola, Hola,
 
+salutacio = "Hola, Ramis"
+print(salutacio[-5::-1]) # a l'inrevès del primer caràcter fins al ?
+print(salutacio[::]) # a l'inrevès
+
+# Llegir una paraula i comprovar si és un palíndrom
+laparaula = input("Escriu la paraula per veure si és un palíndrom: ")
+if laparaula == laparaula[::-1]:
+    print("És un palíndrom")
+else:
+    print("No és un palíndrom")
+
+# Què fa aquest troç de codi?
+for c in laparaula:
+    print(c)    # imprimeix p
+                #           e
+                #           p
+
+# Quantes a té la paraula introduïda
+cuantas = input("Introduce la palabra: ")
+sum_a=0
+for c in cuantas:
+    if c=="a":
+        sum_a=sum_a+1
+print("La paraula {} té {}-a".format(cuantas, str(sum_a)))
