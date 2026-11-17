@@ -90,3 +90,17 @@ for c in cuantas:
     if c=="a":
         sum_a=sum_a+1
 print("La paraula {} té {}-a".format(cuantas, str(sum_a)))
+
+
+#------------------------------------------
+
+cadena = input("Introdueixi la cadena: ")
+paraula = input("Introdueixi la lletra que vol mirar si hi és: ")
+if paraula in cadena:
+    print("La lletra {} està dins la cadena \"{}\"".format(paraula, cadena)) # Fixa-t'hi en les cometes per poder escriure cometes i que s'interpretin com text pla, emprant \ que es diu caràcter d'escapament
+
+
+#---------------------------
+llista = ["Hola", "Adéu", "Siau", "Ramis"]
+x = ", ".join(llista) # si pos un espai " " tot estarà separat
+print(x)
