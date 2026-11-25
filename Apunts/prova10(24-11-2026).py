@@ -8,4 +8,6 @@ for i in range(10):
     l.append(int(input("Número: ")))
 
     r.append(l[i]**2)
-print(r)
+
+for i in range(10):
+    print("El quadrat de {} és {}".format(l[i],r[i]))
